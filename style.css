@@ -1,0 +1,103 @@
+h1 {
+   /*shortcut border property*/
+    border : 2px solid hsl(262, 88%, 87%);
+    border-radius: 8px;
+    font-family: honk , sans-serif;
+    padding-left: 6em;
+}
+body {
+    margin: 0px;
+    background-color: rgb(116, 88, 84);
+}
+p {
+    color: antiquewhite;
+}
+h2 {
+    color: rgb(47, 17, 49);
+    /* horizontal vertical centering  */
+    text-shadow: 2px 2px 3px hsl(0, 88%, 84%);
+    margin: auto;
+}
+#box1 {
+    width: 6em;
+    height: 100px;
+    background-color: rgb(105, 173, 150);
+    box-shadow: 3px 3px 5px rgb(15, 60, 45);
+    font-size: 20px;
+    font-weight: 100;
+    font-family: honk , sans-serif;
+    margin: auto;
+    border: 5px solid hsl(262, 76%, 16%);
+    border-radius: 20px;
+}
+.box {
+     border: 5px solid;
+     font-size: 5em;
+     width: 250px;
+     height: 150px;
+     margin-left: 150px;
+     font-family: 'Rubik Glitch Pop', system-ui;
+    display: inline-block;
+    
+     /*display: contents; this only shows whats inside the boxes*/
+}
+#box2 {
+    background-color: rgb(15, 174, 174);
+    margin: auto; /*This will make sure the div stays in the center of the web browser no matter what*/
+
+}
+#box3 {
+    background-color: violet;
+    margin: auto;
+}
+
+.floating {
+    border: 3px solid;
+display: flow-root; /*This will make sure anything that's floating will stay within the border and no go outside of it */
+}
+#img1 {
+    float : left;
+    margin-right: 10px;
+}
+#img2 {
+    float: right;
+    margin-left: 10px-;
+}
+#overflowing {
+    border: 2px solid;
+    height: 75px;
+}
+
+
+#container {
+    border : 2px solid;
+    
+}
+/* #container p {
+    /*descendant combinator (it's just an empty space) */ 
+ #container > p {
+      /*child combinator > is used when you want to select a child elements from another parent element*/
+      background-color: yellow;
+      color: black;
+      /*p 1 and 2 are direct children of the container but p3 is one more level deep , it's descendant but not a child*/
+
+}
+/*general sibling they are nieces and nephews of the first div element~/ * /
+
+ /**/
+ #container ~p {
+ background-color: pink;
+ color: black;
+ }
+ /* adjacent siblings + same thing as general sibling except it will be only with the 
+ sibling that comes next to the child inside the parent element */
+ #container +p {
+    background-color: rgb(172, 113, 41);
+    color :rgb(47, 17, 49);
+ }
+
+ /*pour resumer : combinators in css : space + ~ and >*/
+ 
+
+
+

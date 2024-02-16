@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trial</title>
+     <!-- A favicon 96*96 px-->    <link rel="icon" type="images/jpg" href="images/favicon.png"
+</head>
+<body>
+   <!-- text formatting-->
+   <p>this is <b>bold</b>normal text</p>
+   <p>this is <i>italic</i> text</p>
+   <p>this is <u>underlined</u>normal text</p>
+   <p>this is <del>deleted</del> normal text</p>
+   <p>this is <small>small</small> normal text</p>
+   <p>this is <sup>superscript</sup> normal text</p>
+   <p>this is <tt>monospaced</tt>normal text</p>
+   <p>this is <big>big </big> normal text</p>
+   <p>this is <mark style="background-color: aquamarine;">marked text</mark> normal text</p>
+   <p>this is normal text</p>
+   <p>this is normal text</p>
+
+    <!-- <span> inline container to group elements for styling purposes -->
+        <!-- <div> block conatiner to group elements for styling purposes--> 
+    <h1><span style="background-color: blanchedalmond;">this is a span title</span></h1>
+    <span>This is a span title </span>
+    <h1><div style="background-color: aquamarine;">This is a div title</div></h1>
+    <div>This is a div title </div>
+    <p><span style="background-color: bisque;">this is a span sentence</span></p>
+    <p><div style="background-color: blueviolet;">this is a div sentence</div></p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia obcaecati nisi nostrum accusantium commodi provident, vitae deserunt rem tenetur? Reiciendis sunt rem quaerat beatae in facilis aliquam maiores corporis autem.</p>
+    <p></p>
+    <!--Unordered list-->
+    <h4>Groceries i want to buy :</h4>
+    <ul><li>Milk</li>
+        <li>eggs</li>
+        <li>bread</li>
+        <li>coffee supplies</li>    </ul>
+ 
+    <!--Ordered list-->
+    <h4>To do list</h4>
+    <ol>
+        <li>eat breakfast</li>
+        <li>go to uni </li>
+        <li>walk your dog </li>
+        <li>go to work </li>
+    </ol>
+    <!--description list-->
+    <h4>Mythical creatures</h4>
+    <dl style="background-color: lightsalmon; border: 2px solid;"> <!-- definitions & terms -->
+        <dt><b>dragon </b> </dt>
+        <dd>a monster resembling a giant reptile that has gigantic wings</dd>
+        <dt><b>phoenix</b> </dt>
+        <dd>Le phénix, parfois écrit phœnix ou phoenix (du grec ancien : φοῖνιξ / phoînix, au sens probable de « rouge sang »), est un oiseau mythique,</dd>
+        <dt><b>vampire</b></dt>
+        <dd>Vampire Host et Vampire gigolo forment une série japonaise de 2004 inspirée ..</dd>
+        <dt><b>werewolf</b></dt>
+        <dd>n folklore, a werewolf or occasionally lycanthrope is an individual who can shape-shift</dd>
+     </dl>
+    <!--tables in HTML-->
+    <!--lets create a store hours table-->
+     <table border="1" style="background-color: black;">
+        <h3>Store hours</h3>
+        <tr align="center" style="background-color: pink;"> <!--a table row-->
+            <th>Sunday</th><!--table header -->
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+        <tr align="center" style="background-color:blanchedalmond;">
+            <td>Closed</td> <!-- table data for a table row-->
+            <td>9-5</td> 
+            <td>9-5</td> 
+            <td>9-5</td> 
+            <td>10-3</td> 
+            <td>9-2</td> 
+            <td>Closed</td> 
+        </tr>
+    </table> 
+  <br>
+  <br>
+    <!--buttons-->
+    <!-- let's make it a hyperlink-->
+    <a href="https://www.youtube.com/watch?v=HGTJBPNC-Gw" target="_blank" title="hi ;)"> 
+        <button style="font-size: 25px; background-color: grey; color: lightblue; border-radius: 20px;"> Click me!</button>
+    </a>
+   <br>
+   <br>
+    <a href="page2.html" target="_blank"  title="goes to another page i created"> 
+    <button onclick="doSomething()" style="font-size: 25px; color: rgb(15, 74, 94); border-radius: 8px;"> goto page 2</button>
+</a>
+<!-- executing some js-->
+<p id="greeting">Hello</p>
+ <script>
+    function  doSomething () {
+        document.getElementById("greeting").innerHTML ="Goodbye";
+    }
+ </script>
+<!-- FORMS-->
+   <!-- form actions basically means when we finish and submit our form to what location do we want it to go-->
+   <form action="" method="POST" enctype="multipart/form-data"> <!-- the action sends the data it will usually direct u to a php file or something like that-->
+     <!-- the method will be for HTTP basically for ex : POST request will be for confidential infos , GET is for insensitive data-->
+     <label for="username">username</label>  <!--the for attribute should have the same name as the id attribute in the input field--> 
+     <input type="text" id="username" placeholder="Lamoooo" minlength="6" maxlength="15"> <!-- there other types other than textbox like password etc-->
+    <!-- the for attribute in the label when matched with the input id will automaticaclly put the cursor there-->
+    <label for="password">Password</label> 
+   <input type="password" id="password" required>
+   <br>
+   <label for="email">Email adress</label>
+   <input type="email" for="email" placeholder="itsmeLamo@gmail.com" >
+   <label for="phone">Phone number</label>
+   <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}[0-9]{3}[0-9]{3}"> 
+    <br>
+   <input type="reset">   
+   <br> 
+   <input type="submit">
+    <br>
+    <label for="bday">Quantity</label>
+    <input type="number" id="quantity" min="0" max="99" value="1">
+    <br>
+    <label for="title">Title</label>
+    <!--radio buttons are for Single choices-->
+    <label for="Mr.">Mr.</label>
+    <input type="radio" id="Mr" value="Mr" name="title">
+    <label for="Ms.">Ms.</label>
+    <input type="radio" id="Ms" value="Ms" name="title">
+    <label for="PhD">PhD</label>
+    <input type="radio" id="PhD" value="PhD" name="title">
+      <br>
+    <label for="payment">Payment</label>
+    <select name="pay" id="payment">
+        <option value="visa">Visa </option>
+        <option value="mastercard">Mastercard</option>
+        <option value="giftcard">giftcard</option>
+    </select>
+    <br> 
+    <!-- they gotta have the same name for radio buttons else it wont work-->
+    <label for="subscribe">subscribe</label>
+    <input type="checkbox" id="subscribe" >
+    <label for="follow">Follow</label>
+    <input type="checkbox" id="follow" >
+    <br>
+    <label for="comment">Comment</label>
+     <textarea id="comment" cols="10" rows="10"></textarea>
+    <label for="file">
+     enter a file </label>
+     <input type="file" id="file" accept="image/png, image/jpeg">
+     <br>
+     <!-- when you're sending a file such an image you need to change the enctype to multipart-->
+
+   </form>
+
+
+   <!--pagination = method by which a document 
+            is being separated into pages
+            and numbers are given-->
+
+    
+</body>
+</html>

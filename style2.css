@@ -1,0 +1,57 @@
+.container {
+    border: 2px solid;
+    height : 75px;
+    overflow : clip; /*visible does nothing , hidden just crops it , clip works with overflow clip margin*/
+    overflow-clip-margin: scroll; /*you could do auto or give it a little px or em whataver*/
+
+}
+
+.div1 {
+    background-color: rgb(51, 132, 167);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+
+}
+span {
+    background-color: rgb(204, 88, 146);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+
+}
+
+  * {
+    box-sizing: border-box;
+  }
+.box {
+    border : 2px solid;
+    /*The box-sizing property defines how the width and height of an element are calculated: should they include padding and borders, or not.*/
+    height: auto;
+    width: 50%;
+    float: left;
+    /*float : left; the float property isnt working*/
+    padding: 25px; /*between the content and the borders*/
+   text-align: center;
+   /*there's a mix-width mix-height min-width min-height property*/
+}
+
+
+#box3 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(81, 127, 225);
+    position : sticky;
+    top : 100px;
+    left: 100px;
+
+}
+#box4 {
+    width: 100px;
+    height: 100px;
+    background-color: palevioletred;
+    position: absolute; /*since box4 is contained within box3 then box3 is it's nearest ancestor*/
+    top: 50px;
+    left :50px;
+}
+

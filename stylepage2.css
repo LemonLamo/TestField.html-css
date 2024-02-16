@@ -1,0 +1,22 @@
+.pagination {
+    text-align: center;
+
+}
+.pagination a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+.pagination a.active {
+    background-color: greenyellow;
+    font-weight: bold;
+    border-radius: 5px;
+}
+/*if any anchor element is not active then we will not 
+highlight them so we use the NOT pseudo class of the class
+  active*/
+.pagination a:hover:not(.active) {
+    background-color: rgb(203, 199, 199);
+    border-radius: 5px;
+}

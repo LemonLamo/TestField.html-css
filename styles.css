@@ -1,0 +1,152 @@
+/* if you used google fonts that you imported you gotta use this 
+@font-face {
+    src : url(link.....)
+    font-family : nameofthefont;
+}*/
+
+body {
+    background-color: rgb(37, 50, 62);
+}
+#p1 {
+    color : tomato;
+}
+#p2 {
+    color : rgb(121, 205, 201);
+}
+#p3 {
+    color :  rgb(167, 59, 125);
+}
+#p4 {
+    color : hsl(275, 69%, 70%);
+}
+h1 {
+    font-family: Honk , sans-serif;
+    color: bisque;
+}
+p {
+    color: rgb(230, 164, 156);
+    font-family: "lucida console", "courier new";
+    font-size: 1em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+   a:link {
+      color: rgb(138, 147, 246);
+    
+   }
+   a:hover {
+    font-size: 1.1em;
+    color:green;
+   }
+   a:active {
+    font-size: 1.1em;
+    color: darkblue;
+   }
+   a:visited {
+    font-size: 1.1em;
+    color: purple;
+   }
+button:hover{
+    font-size: 2em;
+    background-color: aquamarine;
+}
+button:active {
+    font-size: 2em;
+    background-color: palevioletred;
+}
+ li {
+    color:bisque
+ }
+li:hover {
+    background-color: rgb(129, 129, 53);
+}
+/*there is also NOT pseudo-classes anything that isnt in that
+state will have that property*/
+li:not(:hover) {
+    background-color: rgb(41, 36, 36);
+}
+/*then we have NTH:CHILD*/
+/*really handy with javascript and variables*/
+li:nth-child(3n) {
+    background-color: palevioletred;
+}
+
+#greeting {
+    color: blanchedalmond;
+    margin: auto;
+    text-align: center;
+}
+
+#greeting p {
+    background-color: rgb(49, 85, 97);
+    padding: 10px;
+    display: none;
+}
+/*This comes really handy when you create dropdown menus*/
+#greeting:hover p{
+     display: block;
+}
+
+h1::first-letter {
+    font-size: 1.5em;
+    font-style: italic;
+}
+p::first-line {
+    background-color: rgb(87, 43, 58);
+}
+
+p::selection {
+    color: whitesmoke;
+    background-color: green;
+}
+#fruit li::before {
+    content: "💕😊";
+}
+#apple::after {
+content:"🍎";
+}
+#orange::after {
+    content :"🍊";
+}
+#banana::after {
+       content: 🍌;
+}
+/*pseudo elements hadi jaya chghol l ::before*/
+#fruit li::marker{
+    content: "🟩";
+}
+
+.dropdown button {
+    background-color: antiquewhite;
+    color: hsl(276, 15%, 20%);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+
+}
+.dropdown .menu {
+    background-color: rgb(167, 167, 167);
+    position : absolute;
+    min-width: 100px;
+    box-shadow : 2px 2px 5px rgba(177, 122, 122, 0.763);
+}
+.dropdown:hover .content {
+    display: block;
+}
+.dropdown:hover button {
+    background-color: rgb(172, 150, 123);
+}
+.dropdown a:hover {
+    background-color: rgba(129, 151, 110, 0.865);
+}
+.dropdown {
+    display: inline-block;
+}
