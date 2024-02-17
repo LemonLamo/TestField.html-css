@@ -56,5 +56,28 @@
      transform: scaleX(1.1);
       /*scaling compresses or decompresses your element */
      transform: skewY(45deg); /*could be combined and you can just put everything in one line tbh*/
-     
+     animation-name: slideLeft;
+     animation-duration: 2s;
     }
+    @keyframes slideLeft {
+      from {transform : translateX(300px)}
+    }
+    @keyframes slideRight {
+        to {
+            translate: translateX(300%);
+        }
+    }
+    @keyframes slideDown {
+        /*a remplir flemme rn*/
+    }
+    @keyframes slideUp {
+        /*a remplir*/
+    }
+    @keyframes rotate {
+        25%{
+            transform: rotateZ(360deg);
+        }
+    } /* grow : *scale (2,2) shrink scale (0.5,0.5)
+         fadeIn or fadeOut is with opacity 
+         you can also change colors , do a glow animation with 
+         box shadows you can also do an animation-iteration-count*/
