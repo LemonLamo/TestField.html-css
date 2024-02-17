@@ -1,6 +1,7 @@
 body {
-   margin : auto;
+    margin: auto;
 }
+
 main {
     margin-left: 20px;
     margin-right: 20px;
@@ -8,57 +9,58 @@ main {
 
 h1 {
     text-align: center;
-    font-family: honk, sans-serif;   
+    font-family: 'Honk', sans-serif;
 }
+
 .navbar ul {
     list-style-type: none;
-    background-color: rgba(124, 119, 119, 0.888)egrey;
+    background-color: rgba(124, 119, 119, 0.888);
     padding: 0px;
     margin: 0px;
-    overflow:hidden;
+    overflow: hidden;
 }
-/*vertical style navigation bar*/
+
 .navbar a {
     background-color: rgb(44, 30, 30);
     color: rgb(215, 159, 159);
     text-decoration: none;
     padding: 15px;
-  display: inline-block;
+    display: inline-block;
     text-align: center;
 }
+
 .navbar a:hover {
     background-color: rgba(0, 0, 0, 0.584);
 }
+
 .navbar li {
-   float : left;
+    float: left;
 }
-/*for compatibility with all devices you would want to do 
-something like this : 
-@media screen and (max-width:600px) {
-     aside,section, article {
-        width: 100%;
-       ** this is known as responsive css
-     }
-}*/
+
 .gallery {
     display: inline-block;
     border: 1px solid hsla(0, 0%, 60%, 0.991);
     margin: 5px;
 }
+
 .gallery .description {
     padding: 10px;
     text-align: center;
 }
+
 .gallery:hover {
-    border: 1px solid hsla(0, 0%, 30%, 0.991)
+    border: 1px solid hsla(0, 0%, 30%, 0.991);
 }
+
 .gallery img {
-    width:100%;
+    width: 100%;
     height: auto;
 }
+
 .icons {
     text-align: center;
 }
-.fa-solid fa-house {
+
+.icons .fas.fa-house {
     color: grey;
 }

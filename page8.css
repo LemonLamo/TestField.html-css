@@ -1,0 +1,60 @@
+.box {
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+#box1 {
+    background-color: hsl(0, 55%, 53%);
+  
+}
+
+#box2 {
+    background-color: hsl(49, 59%, 53%);
+}
+
+#box3 {
+    background-color: hsl(122, 55%, 53%);
+}
+
+#box4 {
+    background-color: hsl(204, 58%, 39%);
+}
+.container {
+    display: flex;
+    /*by default the direction of a flex 
+    element is row
+    there's also row-reverse column and 
+    column-reverse*/
+    /*the justify content property is there to position
+    the elements on the main axis (X)*/
+    justify-content: space-evenly;
+   /*then there's the cross axis using 
+   Align-items property (Y axis)*/
+   border: 10px solid black;
+   height: 90vh;
+   align-items: center;
+   flex-wrap: wrap; /*this one is used if you have too much 
+   items in the same container and you need to space them around*/
+    column-gap: 1em;
+    row-gap: 1em;
+    /*there's also aligning for single elements using 
+    align-self property*/
+}
+#box5 {
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 13em;
+    text-align: center;
+    background-color: hsl(122, 55%, 53%);
+
+     transform: translateX(2em) /*moving to the right or left (negative)*/;
+     transform: translateY(50px)/*moving put or down */;
+     transform: rotateZ(20deg);
+     transform: scaleX(1.1);
+      /*scaling compresses or decompresses your element */
+     transform: skewY(45deg); /*could be combined and you can just put everything in one line tbh*/
+     
+    }
