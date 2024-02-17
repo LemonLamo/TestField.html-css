@@ -56,3 +56,9 @@ something like this :
     width:100%;
     height: auto;
 }
+.icons {
+    text-align: center;
+}
+.fa-solid fa-house {
+    color: grey;
+}
